@@ -24,6 +24,12 @@ app.use("/api/products", (req, res) => {
   });
 });
 
+app.use("/api/orders", (req, res) => {
+  return res.status(200).json({
+    message: "These are the orders",
+  });
+});
+
 //error handler
 app.use(errorHandler);
 
